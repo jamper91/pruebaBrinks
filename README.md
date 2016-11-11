@@ -16,7 +16,8 @@ no se hay acceso a información
 * Implementación de la biblioteca Volley de Google para consultas de servicios web
 * Implementación de cache de imagenes con la biblioteca Volley de Google
 * Implementación de animaciones
-* Implementación de diseño para tablets y telefonos
+* Implementación de diseño telefonos.
+* Implementación de funcionamiento en modo off line
 
 ## Autor
 
