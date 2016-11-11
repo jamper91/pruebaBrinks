@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fondo_1"
+    android:background="#595555"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimension_60">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                style="@style/ic_2"
+                android:id="@+id/img1" />
+
+            <TextView
+                style="@style/lbl_40_blanco_1"
+                android:text="Nombre"
+                android:id="@+id/txt1"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/dimension_17" />
+
+            <TextView
+                style="@style/lbl_12_blanco_1"
+                android:text="descripcion"
+                android:id="@+id/txt2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimension_17"
+                android:gravity="left" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        style="@style/header_1"
+        layout="@layout/header" />
+
+</RelativeLayout>

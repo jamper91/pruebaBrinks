@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Demo Brinks</string>
+    <string name="visitante">Demo Brinks</string>
+    <string name="bienvenida">
+        Jorge Moreno
+    </string>
+
+    <string-array name="errores">
+        <item>No hay acceso a internet</item>
+    </string-array>
+    <string-array name="mensajes">
+
+    </string-array>
+    <string name="empezar">
+        Empezar
+    </string>
+    <string name="categorias">
+        Categorías
+    </string>
+    <string name="aplicaciones">
+        Aplicaciones
+    </string>
+    <string name="obteniendo_informacion">Sincronizando</string>
+
+    <string-array name="opc_spiner">
+        <item>Ordenar por Nombre</item>
+        <item>Ordenar por Fecha</item>
+    </string-array>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fondo_1"
+    android:orientation="vertical"
+    tools:context="co.jamper91.pruebabrinks.vista_0"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="#1e1b1b">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img1"
+        android:src="@drawable/logo" />
+
+    <TextView
+        style="@style/lbl_40_blanco_1"
+        android:text="@string/visitante"
+        android:id="@+id/txt1"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/dimension_17" />
+
+    <TextView
+        style="@style/lbl_20_blanco_1"
+        android:text="@string/bienvenida"
+        android:id="@+id/txt2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimension_17" />
+
+</LinearLayout>
