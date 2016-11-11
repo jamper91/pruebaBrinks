@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.daimajia.androidanimations.library.Techniques;
 
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 import co.jamper91.pruebabrinks.diseno.ListAdapter_ImagenTexto2;
@@ -27,11 +28,12 @@ public class vista_2 extends AppCompatActivity {
 
     private Administrador admin;
     private Hashtable<String, String> parametros;
+    private static LinkedHashMap<String, Animacion> elementos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vista_2);
-        admin = Administrador.getInstance(this);
+        
         get_paremeters(getIntent().getExtras());
         init_gui();
     }
@@ -49,13 +51,16 @@ public class vista_2 extends AppCompatActivity {
     }
     private void init_gui()
     {
+        elementos = new LinkedHashMap<>();
+        
+        elementos.put("header_img1", new Animacion((ImageView)findViewById(R.id.header_img1), Techniques.SlideInDown));
+        elementos.put("header_txt1", new Animacion((TextView)findViewById(R.id.header_txt1), Techniques.SlideInDown));
+        elementos.put("header_img2", new Animacion((ImageView)findViewById(R.id.header_img2), Techniques.SlideInDown));
+        elementos.put("lst1", new Animacion((AbsListView)findViewById(R.id.lst1), Techniques.ZoomIn));
+        elementos.put("edt1", new Animacion((EditText)findViewById(R.id.edt1), Techniques.ZoomIn));
+        elementos.put("spn1", new Animacion((Spinner)findViewById(R.id.spn1), Techniques.ZoomIn));
+        admin = Administrador.getInstance(this, elementos);
         admin.init_header(this, getString(R.string.aplicaciones));
-        admin.elementos.put("header_img1", new Animacion((ImageView)findViewById(R.id.header_img1), Techniques.SlideInDown));
-        admin.elementos.put("header_txt1", new Animacion((TextView)findViewById(R.id.header_txt1), Techniques.SlideInDown));
-        admin.elementos.put("header_img2", new Animacion((ImageView)findViewById(R.id.header_img2), Techniques.SlideInDown));
-        admin.elementos.put("lst1", new Animacion((AbsListView)findViewById(R.id.lst1), Techniques.ZoomIn));
-        admin.elementos.put("edt1", new Animacion((EditText)findViewById(R.id.edt1), Techniques.ZoomIn));
-        admin.elementos.put("spn1", new Animacion((Spinner)findViewById(R.id.spn1), Techniques.ZoomIn));
         admin.animar_in(0);
         get_data();
     }
@@ -63,7 +68,7 @@ public class vista_2 extends AppCompatActivity {
     private void get_data()
     {
         get_apps_by_categorie(parametros.get("category_id"), "name");
-        EditText edt1 = (EditText)admin.elementos.get("edt1").getElemento();
+        EditText edt1 = (EditText)elementos.get("edt1").getElemento();
         edt1.addTextChangedListener(new TextWatcher() {
 
             @Override
@@ -78,7 +83,7 @@ public class vista_2 extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable arg0) {}
         });
-        Spinner spn1 =(Spinner)admin.elementos.get("spn1").getElemento();
+        Spinner spn1 =(Spinner)elementos.get("spn1").getElemento();
         spn1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -102,7 +107,7 @@ public class vista_2 extends AppCompatActivity {
         final LinkedList<Hashtable<String, String>> apps = admin.obtener_datos_por_columna("apps", "category_id", category_id, order_by);
         if(apps!=null){
             adapterImagenTexto = new ListAdapter_ImagenTexto2(vista_2.this, apps, admin);
-            AbsListView lst1 = (AbsListView) admin.elementos.get("lst1").getElemento();
+            AbsListView lst1 = (AbsListView) elementos.get("lst1").getElemento();
             lst1.setAdapter(adapterImagenTexto);
             lst1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override

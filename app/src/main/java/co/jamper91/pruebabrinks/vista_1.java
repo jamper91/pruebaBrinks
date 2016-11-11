@@ -27,6 +27,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -41,6 +42,8 @@ import co.jamper91.pruebabrinks.objetos.Category;
 public class vista_1 extends FragmentActivity {
 
     private Administrador admin;
+    private static LinkedHashMap<String, Animacion> elementos;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,14 +62,15 @@ public class vista_1 extends FragmentActivity {
 
     private void init_gui()
     {
-        admin = Administrador.getInstance(this);
+        elementos = new LinkedHashMap<>();
+        elementos.put("header_img1", new Animacion((ImageView)findViewById(R.id.header_img1), Techniques.SlideInDown));
+        elementos.put("header_txt1", new Animacion((TextView)findViewById(R.id.header_txt1), Techniques.SlideInDown));
+        elementos.put("header_img2", new Animacion((ImageView)findViewById(R.id.header_img2), Techniques.SlideInDown));
+        elementos.put("lst1", new Animacion((AbsListView)findViewById(R.id.lst1), Techniques.ZoomIn));
+        elementos.put("edt1", new Animacion((EditText)findViewById(R.id.edt1), Techniques.ZoomIn));
+        elementos.put("spn1", new Animacion((Spinner)findViewById(R.id.spn1), Techniques.ZoomIn));
+        admin = Administrador.getInstance(this, elementos);
         admin.init_header(this, getString(R.string.categorias));
-        admin.elementos.put("header_img1", new Animacion((ImageView)findViewById(R.id.header_img1), Techniques.SlideInDown));
-        admin.elementos.put("header_txt1", new Animacion((TextView)findViewById(R.id.header_txt1), Techniques.SlideInDown));
-        admin.elementos.put("header_img2", new Animacion((ImageView)findViewById(R.id.header_img2), Techniques.SlideInDown));
-        admin.elementos.put("lst1", new Animacion((AbsListView)findViewById(R.id.lst1), Techniques.ZoomIn));
-        admin.elementos.put("edt1", new Animacion((EditText)findViewById(R.id.edt1), Techniques.ZoomIn));
-        admin.elementos.put("spn1", new Animacion((Spinner)findViewById(R.id.spn1), Techniques.ZoomIn));
         admin.animar_in(0);
         get_data();
     }
@@ -80,7 +84,7 @@ public class vista_1 extends FragmentActivity {
             get_categories("name");
         }
 
-        EditText edt1 = (EditText)admin.elementos.get("edt1").getElemento();
+        EditText edt1 = (EditText)elementos.get("edt1").getElemento();
         edt1.addTextChangedListener(new TextWatcher() {
 
             @Override
@@ -95,7 +99,7 @@ public class vista_1 extends FragmentActivity {
             @Override
             public void afterTextChanged(Editable arg0) {}
         });
-        Spinner spn1 =(Spinner)admin.elementos.get("spn1").getElemento();
+        Spinner spn1 =(Spinner)elementos.get("spn1").getElemento();
         spn1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -167,7 +171,7 @@ public class vista_1 extends FragmentActivity {
         final LinkedList<Hashtable<String, String>> categories = admin.obtener_datos_por_tabla("categories", order_by);
         if(categories!=null){
             adapterImagenTexto = new ListAdapter_ImagenTexto(vista_1.this, categories, admin);
-            AbsListView lst1 = (AbsListView) admin.elementos.get("lst1").getElemento();
+            AbsListView lst1 = (AbsListView) elementos.get("lst1").getElemento();
 //            lst1.setTransitionEffect(new CardsEffect());
             lst1.setAdapter(adapterImagenTexto);
             lst1.setOnItemClickListener(new AdapterView.OnItemClickListener() {

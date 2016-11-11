@@ -51,7 +51,7 @@ public class Administrador{
 
     private static DataBase db;
 
-    public static LinkedHashMap<String, Animacion> elementos;
+    private static LinkedHashMap<String, Animacion> elementos;
     public static Typeface[] fuentes = null;
 
 
@@ -103,12 +103,12 @@ public class Administrador{
         actividad = a;
         return instancia;
     }
-    public static Administrador getInstance(Context c) {
+    public static Administrador getInstance(Context c, LinkedHashMap<String, Animacion> elementos2) {
         if (instancia == null) {
 
             instancia = new Administrador(c);
         }
-        elementos=new LinkedHashMap<String, Animacion>();
+        elementos=elementos2;
         return instancia;
     }
     public static Administrador getInstance_sinelementos(Context c) {
