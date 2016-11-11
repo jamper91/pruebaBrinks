@@ -57,16 +57,16 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.3508773">
-              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="62" />
+              <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2621#2651#0" expanded="true" />
-                <element signature="e#4692#5570#0" expanded="true" />
-                <element signature="e#4985#5478#0" expanded="true" />
-                <element signature="e#5477#5478#0" expanded="true" />
-                <element signature="e#5569#5570#0" expanded="true" />
-                <element signature="e#6467#7105#0" expanded="true" />
-                <element signature="e#7104#7105#0" expanded="true" />
+                <element signature="e#2681#2711#0" expanded="true" />
+                <element signature="e#4752#5630#0" expanded="true" />
+                <element signature="e#5045#5538#0" expanded="true" />
+                <element signature="e#5537#5538#0" expanded="true" />
+                <element signature="e#5629#5630#0" expanded="true" />
+                <element signature="e#6527#7165#0" expanded="true" />
+                <element signature="e#7164#7165#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_0.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="42" />
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,13 +119,13 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="42" />
+              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1328#1360#0" expanded="true" />
-                <element signature="e#2370#2402#0" expanded="true" />
-                <element signature="e#4360#4944#0" expanded="true" />
-                <element signature="e#4943#4944#0" expanded="true" />
+                <element signature="e#2421#2453#0" expanded="true" />
+                <element signature="e#4411#4995#0" expanded="true" />
+                <element signature="e#4994#4995#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,8 +134,8 @@
       <file leaf-file-name="vista_3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24022989">
-              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.5446585">
+              <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -2052,8 +2052,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/objetos/Aplicacion.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/vista_2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/Util/Administrador.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_0.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_2.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_3.java" />
       </list>
@@ -2576,7 +2576,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33296213" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33296213" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -2880,29 +2880,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_1.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_0.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3508773">
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2621#2651#0" expanded="true" />
-            <element signature="e#4692#5570#0" expanded="true" />
-            <element signature="e#4985#5478#0" expanded="true" />
-            <element signature="e#5477#5478#0" expanded="true" />
-            <element signature="e#5569#5570#0" expanded="true" />
-            <element signature="e#6467#7105#0" expanded="true" />
-            <element signature="e#7104#7105#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_0.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="42" />
+        <state vertical-scroll-proportion="-5.3508773">
+          <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2681#2711#0" expanded="true" />
+            <element signature="e#4752#5630#0" expanded="true" />
+            <element signature="e#5045#5538#0" expanded="true" />
+            <element signature="e#5537#5538#0" expanded="true" />
+            <element signature="e#5629#5630#0" expanded="true" />
+            <element signature="e#6527#7165#0" expanded="true" />
+            <element signature="e#7164#7165#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2910,21 +2910,21 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="42" />
+          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1328#1360#0" expanded="true" />
-            <element signature="e#2370#2402#0" expanded="true" />
-            <element signature="e#4360#4944#0" expanded="true" />
-            <element signature="e#4943#4944#0" expanded="true" />
+            <element signature="e#2421#2453#0" expanded="true" />
+            <element signature="e#4411#4995#0" expanded="true" />
+            <element signature="e#4994#4995#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/jamper91/pruebabrinks/vista_3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24022989">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.5446585">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

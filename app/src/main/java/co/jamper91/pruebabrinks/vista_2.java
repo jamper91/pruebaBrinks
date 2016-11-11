@@ -52,7 +52,7 @@ public class vista_2 extends AppCompatActivity {
     private void init_gui()
     {
         elementos = new LinkedHashMap<>();
-        
+        admin = Administrador.getInstance(this, elementos);
         elementos.put("header_img1", new Animacion((ImageView)findViewById(R.id.header_img1), Techniques.SlideInDown));
         elementos.put("header_txt1", new Animacion((TextView)findViewById(R.id.header_txt1), Techniques.SlideInDown));
         elementos.put("header_img2", new Animacion((ImageView)findViewById(R.id.header_img2), Techniques.SlideInDown));

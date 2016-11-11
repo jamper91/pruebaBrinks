@@ -35,8 +35,8 @@ public class vista_0 extends AppCompatActivity {
 
     private void init_gui()
     {
-        elementos = new LinkedHashMap<>();
-
+        elementos = new LinkedHashMap<String, Animacion>();
+        admin = Administrador.getInstance(this, elementos);
         elementos.put("txt1", new Animacion((TextView)findViewById(R.id.txt1), Techniques.SlideInDown, admin.fuentes[0]));
         elementos.put("txt2", new Animacion((TextView) findViewById(R.id.txt2), Techniques.SlideInDown, admin.fuentes[1]));
         elementos.put("img1", new Animacion((ImageView)findViewById(R.id.img1), Techniques.SlideInDown, admin.fuentes[1]));
